@@ -1,0 +1,59 @@
+{
+  "name": "casino-server",
+  "version": "0.1.5",
+  "description": "An multi-rule scalable online poker game server powered by redis, node.js and socket.io",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/casino-server.js",
+    "test": "gulp unit-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/floatinghotpot/casino-server.git"
+  },
+  "keywords": [
+    "casino",
+    "poker",
+    "game",
+    "chat"
+  ],
+  "author": "Raymond Xie <rjfun.mobile@gmail.com> (http://floatinghotpot.github.io/)",
+  "contributors": [
+    {
+      "name": "Raymond Xie",
+      "email": "rjfun.mobile@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/floatinghotpot/casino-server/issues"
+  },
+  "dependencies": {
+    "minimist": "^1.1.0",
+    "express": "^4.10.4",
+    "redis": "^0.12.1",
+    "socket.io": "^1.2.1",
+    "socket.io-redis": "^0.1.4"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.10",
+    "gulp-jasmine": "^1.0.1",
+    "gulp-concat": "^2.4.2",
+    "gulp-jshint": "^1.9.0",
+    "gulp-myth": "^1.0.2",
+    "gulp-minify-css": "^0.3.11",
+    "gulp-uglify": "^1.0.2",
+    "vinyl-source-stream": "^1.0.0",
+    "jasmine-reporters": "^1.0.1",
+    "browserify": "^7.0.0",
+    "browser-sync": "^1.7.2",
+    "del": "^1.1.0",
+    "read": "^1.0.5"
+  },
+  "analyze": false,
+  "preferGlobal": "true",
+  "bin": {
+    "casino-server": "./bin/casino-server.js",
+    "casino": "./bin/casino-server.js"
+  }
+}

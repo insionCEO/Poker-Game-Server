@@ -1,0 +1,123 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font: 13px Helvetica, Arial;
+}
+
+div#env {
+	display: inline-block;
+	width: 60%;	
+	height: 100%;
+	border:1px solid black;
+	position: fixed;
+	left: 0;
+}
+
+div#logs {
+	display: inline-block;
+	width: 40%;	
+	height: 100%;
+	border:1px solid black;
+	position: fixed;
+	right: 0;
+}
+
+div#cmds {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+}
+
+form {
+	background: #000;
+	color: #fff;
+	padding: 3px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+form input#m {
+	border: 0;
+	padding: 10px;
+	width: 40%;
+	margin-right: .5%;
+}
+
+form button#send {
+	width: 5%;
+	background: rgb(130, 224, 255);
+	border: 1px solid black;
+	padding: 10px;
+}
+
+div.dialog {
+	display: inline-block;
+	border: 1px solid gray;
+	vertical-align: top;
+	background: silver;
+	color: black;
+}
+
+div.dlgheader {
+	text-align: right;
+	background: gray;
+}
+
+div.dlgfooter {
+	text-align: right;
+}
+
+div.cmd {
+	display: inline-block;
+}
+
+button.cmd {
+	background: rgb(130, 224, 255);
+	border: 1px solid black;
+	padding: 10px;
+	margin: 3px;
+}
+
+label.cmd {
+	width: 80px;
+	padding: 5px;
+	margin: 3px;
+}
+
+input.cmd {
+	padding: 5px;
+	margin: 3px;
+}
+
+.list ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.list li {
+	padding: 1px 10px;
+}
+
+.list li:nth-child(odd) {
+	background: #eee;
+}
+
+li.active, div.active {
+	background: yellow;	
+}
+
+li.active, div.active {
+	background: yellow;	
+	border: 1px solid black;
+}
+
+li.inactive, div.inactive {
+	background: gray;	
+	border: 1px solid black;
+}
